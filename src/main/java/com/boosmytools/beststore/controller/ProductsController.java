@@ -19,9 +19,8 @@ private ProductsRepository repo;
 
 @GetMapping({"","/"})
 public String showProductList(Model model) {
-	/*List<Product> products = repo.findAll();
+	List<Product> products = repo.findAll();
 	model.addAttribute("products",products);
 	return "products/index"; 
-	*/
 }
 }
