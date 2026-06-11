@@ -22,7 +22,7 @@ private double price;
 @Column (columnDefinition = "TEXT")
 private String description;
 private Date createdAt;
-private String imageFieldName;
+private String imageFileName;
 public int getId() {
 	return id;
 }
@@ -65,11 +65,11 @@ public Date getCreatedAt() {
 public void setCreatedAt(Date createdAt) {
 	this.createdAt = createdAt;
 }
-public String getImageFieldName() {
-	return imageFieldName;
+public String getImageFileName() {
+	return imageFileName;
 }
-public void setImageFieldName(String imageFieldName) {
-	this.imageFieldName = imageFieldName;
+public void setImageFileName(String imageFileName) {
+	this.imageFileName = imageFileName;
 }
 }
 
