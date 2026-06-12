@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.boosmytools.beststore.models.Product;
+import com.boosmytools.beststore.models.ProductDto;
 import com.boosmytools.beststore.services.ProductsRepository;
 
 @Controller
@@ -23,4 +24,11 @@ public String showProductList(Model model) {
 	model.addAttribute("products",products);
 	return "products/index"; 
 }
+@GetMapping("/create")
+public String showCreatePage(Model model) {
+	ProductDto productDto = new ProductDto();
+	model.addAttribute("productDto",productDto);
+	return "products/CreateProduct"; 
+}
+
 }
